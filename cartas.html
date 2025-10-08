@@ -7,6 +7,164 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <style>
+    /* =============================
+   ESTILO INSPIRADO EM CLASH ROYALE
+============================= */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fundo e fonte geral */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(180deg, #0059b3 0%, #003366 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ======= CABEÇALHO ======= */
+  header {
+    background-color: #0a1d3a;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    border-bottom: 3px solid #ffcc00;
+  }
+  
+  header h1 {
+    font-size: 2.2em;
+    letter-spacing: 1px;
+  }
+  
+  /* ======= NAVEGAÇÃO ======= */
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #ffcc00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  
+  nav a:hover {
+    background-color: #ffcc00;
+    color: #0a1d3a;
+  }
+  
+  /* ======= CONTEÚDO PRINCIPAL ======= */
+  main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* ======= SEÇÃO INTRO ======= */
+  .intro {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .intro h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+  }
+  
+  .intro p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  /* ======= SEÇÃO CARTAS ======= */
+  .cards {
+    text-align: center;
+  }
+  
+  .cards h2 {
+    color: #ffcc00;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .card {
+    background-color: #ffffff20;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff30;
+  }
+  
+  .card h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  /* ======= RODAPÉ ======= */
+  footer {
+    background-color: #0a1d3a;
+    color: #ffcc00;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #ffcc00;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
+  }
+  
+  /* ======= RESPONSIVIDADE ======= */
+  @media (max-width: 700px) {
+    .card-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    header h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  </style>
   <header>
     <h1>Clash Royale</h1>
     <nav>
@@ -40,3 +198,4 @@
   </footer>
 </body>
 </html>
+

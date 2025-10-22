@@ -145,6 +145,27 @@
     border-top: 3px solid #ffcc00;
     box-shadow: 0 -3px 10px rgba(0,0,0,0.3);
   }
+
+  /* ======= BOTÃO FECHAR APP ======= */
+  .fechar-app {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .fechar-app button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #ffcc00;
+    color: #0a1d3a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .fechar-app button:hover {
+    background-color: #e6b800;
+  }
   
   /* ======= RESPONSIVIDADE ======= */
   @media (max-width: 700px) {
@@ -191,11 +212,28 @@
         </div>
       </div>
     </section>
+
+    <!-- Botão para Fechar App -->
+    <section class="fechar-app">
+      <button onclick="fecharApp()">Fechar App</button>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 - Site feito para fãs de Clash Royale</p>
   </footer>
+
+  <!-- Script de comunicação com o App Inventor -->
+  <script>
+    function fecharApp() {
+      if (window.AppInventor) {
+        window.AppInventor.setWebViewString("fechar_app");
+      } else {
+        alert("Este botão só funciona dentro do aplicativo.");
+      }
+    }
+  </script>
 </body>
 </html>
+
 
